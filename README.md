@@ -29,3 +29,4 @@ chmod -R g+rw b17
 
  chmod g+s may not work through VNC, but it will work through putty
 
+echo: print the string at the screen
