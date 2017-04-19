@@ -26,3 +26,6 @@ chmod -R g+rw b17
 
  netlist: only has function logic connection information, no clock path, no position information
  syndft: insert scan chains, control max fan out of gates, until now, still no clock path. Just a moidified netlist
+
+ chmod g+s may not work through VNC, but it will work through putty
+
