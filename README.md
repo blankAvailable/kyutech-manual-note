@@ -28,5 +28,13 @@ chmod -R g+rw b17
  syndft: insert scan chains, control max fan out of gates, until now, still no clock path. Just a moidified netlist
 
  chmod g+s may not work through VNC, but it will work through putty
+ (shell trough vnc may lack of some rights, mkdir also didn't work, better to use putty)
 
 echo: print the string at the screen
+
+git, make a private group shared repository,
+mkdir xxxx
+cd xxxx
+git --bare --shared=group
+access this repository
+git clone "ssh://$ip/$directory"
