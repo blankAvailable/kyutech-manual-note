@@ -1,4 +1,4 @@
-%show the date
+ %show the date
 sh date
 
 %set circuit name

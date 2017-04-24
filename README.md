@@ -26,19 +26,3 @@ chmod -R g+rw b17
 
  netlist: only has function logic connection information, no clock path, no position information
  syndft: insert scan chains, control max fan out of gates, until now, still no clock path. Just a moidified netlist
-
- *.sdc file: design constraint file.
- a design constraint refers to some limitation on the conditions under which a system is developed, or on the requirements of the system.
-
- command to give every scan chain a independent clock pin, (use kyupi)
- grouping porject, jp.ac.kyutech.ci.grouping package, -d b20_25_10_scan.vg -separate_clocks b20_25_10_scan2.vg
-
- need \nocite{*} before \bibliographystyle{IEEEtran}, to pull all references in before any \cite{xxxx} has been used.
- or error will occur
-
- use,
- git fetch origin
- git diff master origin/master
- to check difference. If it is all ok, use,
- git merge origin/master
- to merge the change (Here, we assum that your branch is "master")
