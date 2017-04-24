@@ -49,9 +49,9 @@ chmod -R g+rw b17
  access this repository
  git clone "ssh://$ip/$directory"
 
- use,
+ use:
  git fetch origin
  git diff master origin/master
- to check difference. If it is all ok, use,
+ to check difference. If it is all ok, use:
  git merge origin/master
  to merge the change (Here, we assum that your branch is "master")
