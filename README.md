@@ -11,10 +11,12 @@ edit the third line: set design xxxx to the same name with xxxx.v file
 run: dc_shell -64bit -f -flatten.tcl
 got xxxx_flat.v & xxxx_flat.ddc files
 
-as you don’t have reading rights on /home/stefan, you cannot see my files. But you have execution rights “x” which means you can access sub dirs.
+as you don’t have reading rights on /home/stefan, you cannot see my files. But you have execution rights “x” which 
+means you can access sub dirs.
 chmod -R g+rw b17
 
- if you put the directory 16112011SAED_EDK90nm directly in ats17work/benchmarks, no need to adjust lib path in those .tcl files
+ if you put the directory 16112011SAED_EDK90nm directly in ats17work/benchmarks, no need to adjust lib path in those 
+ .tcl files
 
  change rights to group can access:
  first
@@ -29,7 +31,8 @@ chmod -R g+rw b17
  
  
  *.sdc file: design constraint file.
- a design constraint refers to some limitation on the conditions under which a system is developed, or on the requirements of the system.
+ a design constraint refers to some limitation on the conditions under which a system is developed, or on the 
+ requirements of the system.
 
  command to give every scan chain a independent clock pin, (use kyupi)
  grouping porject, jp.ac.kyutech.ci.grouping package, -d b20_25_10_scan.vg -separate_clocks b20_25_10_scan2.vg
@@ -55,3 +58,23 @@ chmod -R g+rw b17
  to check difference. If it is all ok, use:
  git merge origin/master
  to merge the change (Here, we assum that your branch is "master")
+ 
+ Simultaneous switching of clock
+ gates can lead to high peak power and high di/dt which can stress the
+ power distribution networks, so in fact it's not a good idea to keep the clocks low-skew all over the circuit.
+ 
+ excessive IR-drop:
+ leads to excessive delay
+ if too large, flip-flops may lose their data
+ 
+ Slew is the clock transition, or how long it takes for the clock to switch
+ Slower slew means slower timing and lower power
+ So a proper shape (slop) of slew, can reduce dynamic power while at the same time meeting the timing constraints
+ 
+ Intellectual Property
+ A design or verification unit that is pre-packed and available for licensing.
+ 
+ As design sizes continue to grow, proliferation of internal and external protocols, along with aggressive power 
+ requirements are driving an explosion in the number of asynchronous clocks in today’s SoCs
+ 
+ clock gating: used to gate blocks and areas that will only be activated when they are needed
