@@ -50,7 +50,7 @@ chmod -R g+rw b17
  cd xxxx
  git --bare --shared=group
  access this repository
- git clone "ssh://$ip/$directory"
+ git clone ssh://Username@$ip/$directory
 
  use:
  git fetch origin
@@ -78,3 +78,6 @@ chmod -R g+rw b17
  requirements are driving an explosion in the number of asynchronous clocks in today’s SoCs
  
  clock gating: used to gate blocks and areas that will only be activated when they are needed
+ 
+ Simultaneous Switching Noise: excessive switching activity will not only cause IR-drop and then cause delay,
+ but will also cause ground bounce, make ground voltage not a zero status any more, and cause wrong data
