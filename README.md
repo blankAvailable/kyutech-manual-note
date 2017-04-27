@@ -81,3 +81,9 @@ chmod -R g+rw b17
  
  Simultaneous Switching Noise: excessive switching activity will not only cause IR-drop and then cause delay,
  but will also cause ground bounce, make ground voltage not a zero status any more, and cause wrong data
+ 
+ to get the history version, one '^' means one version back
+ git show HEAD^^ ATS17.tex >ATS17base.tex
+ 
+ to get right level_position info,
+ we need to first acess the level0, then the whole circuit will be sorted.
