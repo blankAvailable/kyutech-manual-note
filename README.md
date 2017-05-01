@@ -87,3 +87,19 @@ chmod -R g+rw b17
  
  to get right level_position info,
  we need to first acess the level0, then the whole circuit will be sorted.
+ 
+ add these after \maketitle, to get page number
+ \thispagestyle{fancy} 
+ \lhead{}  
+ \chead{}
+ \rhead{}  
+ \lfoot{}  
+ \cfoot{\thepage}  
+ %\thepage means the currunt page number  
+ \rfoot{} 
+ \renewcommand{\headrulewidth}{0pt}
+ %set 0pt will cancel the headrule  
+ \renewcommand{\footrulewidth}{0pt} 
+ %set 0pt will cancel the the footrule  
+ \pagestyle{fancy}  
+ \cfoot{\thepage} 
