@@ -106,3 +106,5 @@ chmod -R g+rw b17
  
  added dpro.v into IWLS_benchmarks_2005_V_1.0/itc99/netlist
  modified design_list, added dpro
+ 
+ /opt: store software package under /root
