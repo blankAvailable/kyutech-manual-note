@@ -108,3 +108,10 @@ chmod -R g+rw b17
  modified design_list, added dpro
  
  /opt: store software package under /root
+ 
+ ~/ means /home/user; .filename means hidden filev
+ 
+ when you change .bashrc file, and do source ~/.bashrc then get if: Expression Syntax error(式構文？)
+ don't worry, check your shell name by 'echo $SHELL', to see if it is bash or not.
+ if not, do 'chsh -s /bin/bash' to change default shell to bash permanently.
+                                                                
