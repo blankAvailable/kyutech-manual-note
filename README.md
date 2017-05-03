@@ -114,4 +114,6 @@ chmod -R g+rw b17
  when you change .bashrc file, and do source ~/.bashrc then get if: Expression Syntax error(式構文？)
  don't worry, check your shell name by 'echo $SHELL', to see if it is bash or not.
  if not, do 'chsh -s /bin/bash' to change default shell to bash permanently.
+ 
+ constructors of subclasses extend from KyupiApp should only setup command line option, should not contain parameter initialization.
                                                                 
