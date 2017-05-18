@@ -116,4 +116,13 @@ chmod -R g+rw b17
  if not, do 'chsh -s /bin/bash' to change default shell to bash permanently.
  
  constructors of subclasses extend from KyupiApp should only setup command line option, should not contain parameter initialization.
+ 
+ to use latexdiff, you need first install latexdiff from MiKTex package manger, then install ActivePerl, 
+ notice that although you can get old records rom "git show HEAD", but they contain some special preambles and cannot be
+ accepted by latexdif (at least for windows)
+ 
+ The main difference between ATS17 work and other dft modify methods is, we reduce local WSA to avoid local dynamic excessive IR-drop,
+ others only made efforts to reduce peek WSA or average WSA globally, but problem may still exist locally.
+ And the difference between reference 17, is their method is not optimal and they cannot prove they are pattern independent,
+ also they did a good job, but our method is more universal, optimal and totally pattern independent.
                                                                 
