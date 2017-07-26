@@ -126,3 +126,7 @@ chmod -R g+rw b17
  And the difference between reference 17, is their method is not optimal and they cannot prove they are pattern independent,
  also they did a good job, but our method is more universal, optimal and totally pattern independent.
                                                                 
+Flip-flop nowadays is too fast that we need to insert buffers between two neighboring ffs to prevent hold-time violation.
+
+linux delete floder: rm -rf 'name' -r means delete all, -f means force delete all
+vi need line number? set nu!
