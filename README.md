@@ -48,7 +48,7 @@ chmod -R g+rw b17
  git, make a private group shared repository,
  mkdir xxxx
  cd xxxx
- git --bare --shared=group
+ git init --bare --shared=group
  access this repository
  git clone ssh://Username@$ip/$directory
 
@@ -130,3 +130,7 @@ Flip-flop nowadays is too fast that we need to insert buffers between two neighb
 
 linux delete floder: rm -rf 'name' -r means delete all, -f means force delete all
 vi need line number? set nu!
+
+if you want to update python on linux, look at this :
+https://www.zhihu.com/question/30279880
+http://blog.csdn.net/liang19890820/article/details/51079633
