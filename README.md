@@ -134,3 +134,5 @@ vi need line number? set nu!
 if you want to update python on linux, look at this :
 https://www.zhihu.com/question/30279880
 http://blog.csdn.net/liang19890820/article/details/51079633
+
+When install Texlive for windows, remember it takes several times, and first choose unpack and run .tl file.
