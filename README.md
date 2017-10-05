@@ -135,4 +135,8 @@ if you want to update python on linux, look at this :
 https://www.zhihu.com/question/30279880
 http://blog.csdn.net/liang19890820/article/details/51079633
 
-When install Texlive for windows, remember it takes several times, and first choose unpack and run .tl file.
+When install Texlive for windows,better to install small scheme, and install packages later.
+
+HSPICE:
+BSIM model (BerkeleyShoft-channel IGFET(Insulated Gate Field Effect Transistor, 绝缘场效应晶体管) Model)
+Why HSPICE? because developer: Shawn 'H'ailer & Kim 'H'ailer, haha~
