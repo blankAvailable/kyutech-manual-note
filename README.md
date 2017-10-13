@@ -140,3 +140,5 @@ When install Texlive for windows,better to install small scheme, and install pac
 HSPICE:
 BSIM model (BerkeleyShoft-channel IGFET(Insulated Gate Field Effect Transistor, 绝缘场效应晶体管) Model)
 Why HSPICE? because developer: Shawn 'H'ailer & Kim 'H'ailer, haha~
+
+want to locate the node of a cell? use '.', Xcut.Xstato_reg_0.VDD
