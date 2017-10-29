@@ -142,3 +142,13 @@ BSIM model (BerkeleyShoft-channel IGFET(Insulated Gate Field Effect Transistor, 
 Why HSPICE? because developer: Shawn 'H'ailer & Kim 'H'ailer, haha~
 
 want to locate the node of a cell? use '.', Xcut.Xstato_reg_0.VDD
+
+Most simple method to install jdk:
+edit .bashrc file by adding
+export JAVA_HOME=/home/Zhang/jdk/jdk1.8.0_121[your jdk path]
+export JAVA_BIN=$JAVA_HOME/bin
+export JAVA_LIB=$JAVA_HOME/lib
+export CLASSPATH=.:$JAVA_LIB/tools.jar:$JAVA_LIB/dt.jar
+
+edit .bashrc file to add custom command:
+export PATH=$JAVA_BIN:$PATH:/home/Zhang/research_projects/grouping[custom command file path]
