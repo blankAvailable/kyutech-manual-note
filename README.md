@@ -48,7 +48,7 @@ chmod -R g+rw b17
  git, make a private group shared repository,
  mkdir xxxx
  cd xxxx
- git init --bare --shared=group
+ git --bare --shared=group
  access this repository
  git clone ssh://Username@$ip/$directory
 
@@ -125,30 +125,5 @@ chmod -R g+rw b17
  others only made efforts to reduce peek WSA or average WSA globally, but problem may still exist locally.
  And the difference between reference 17, is their method is not optimal and they cannot prove they are pattern independent,
  also they did a good job, but our method is more universal, optimal and totally pattern independent.
-                                                                
-Flip-flop nowadays is too fast that we need to insert buffers between two neighboring ffs to prevent hold-time violation.
 
-linux delete floder: rm -rf 'name' -r means delete all, -f means force delete all
-vi need line number? set nu!
-
-if you want to update python on linux, look at this :
-https://www.zhihu.com/question/30279880
-http://blog.csdn.net/liang19890820/article/details/51079633
-
-When install Texlive for windows,better to install small scheme, and install packages later.
-
-HSPICE:
-BSIM model (BerkeleyShoft-channel IGFET(Insulated Gate Field Effect Transistor, 绝缘场效应晶体管) Model)
-Why HSPICE? because developer: Shawn 'H'ailer & Kim 'H'ailer, haha~
-
-want to locate the node of a cell? use '.', Xcut.Xstato_reg_0.VDD
-
-Most simple method to install jdk:
-edit .bashrc file by adding
-export JAVA_HOME=/home/Zhang/jdk/jdk1.8.0_121[your jdk path]
-export JAVA_BIN=$JAVA_HOME/bin
-export JAVA_LIB=$JAVA_HOME/lib
-export CLASSPATH=.:$JAVA_LIB/tools.jar:$JAVA_LIB/dt.jar
-
-edit .bashrc file to add custom command:
-export PATH=$JAVA_BIN:$PATH:/home/Zhang/research_projects/grouping[custom command file path]
+in java random.nextInt(bound), will generate random int number from 0 ~ (bound - 1)
