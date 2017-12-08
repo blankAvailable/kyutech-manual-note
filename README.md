@@ -20,9 +20,10 @@ chmod -R g+rw b17
 
  change rights to group can access:
  first
- chmod -R 775 xxxx
+ make all the parent directorys 
+ chmod g+x xxx
  then
- chmod -R g+s xxxx
+ chmod -R g+rwx xxxx
 
  you can create a symbolic link in your home to make your life easier: ln -s /home/stefan/ats17work
 
