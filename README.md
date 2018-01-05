@@ -49,7 +49,7 @@ chmod -R g+rw b17
  git, make a private group shared repository,
  mkdir xxxx
  cd xxxx
- git --bare --shared=group
+ git init --bare --shared=group
  access this repository
  git clone ssh://Username@$ip/$directory
 
