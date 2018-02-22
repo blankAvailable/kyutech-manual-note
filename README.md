@@ -128,3 +128,5 @@ chmod -R g+rw b17
  also they did a good job, but our method is more universal, optimal and totally pattern independent.
 
 in java random.nextInt(bound), will generate random int number from 0 ~ (bound - 1)
+
+if anything need c compiler on windows, better to install vs, after build, use vs to compile.
