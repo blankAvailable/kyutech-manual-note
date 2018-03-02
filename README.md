@@ -130,3 +130,11 @@ chmod -R g+rw b17
 in java random.nextInt(bound), will generate random int number from 0 ~ (bound - 1)
 
 if anything need c compiler on windows, better to install vs, after build, use vs to compile.
+
+Install scipoptsuite and its java interface:
+1.Install VS for c++ compiler
+2.Check out JSCIPOpt from github
+3.wget http://scip.zib.de/download/release/scipoptsuite-5.0.1.tgz -o scipoptsuite-5.0.1.tgz under JSCIPOpt
+4.cmake and build
+5.add "C:\Users\ZhangYucong\Documents\Research\JSCIPOpt\scipoptsuite-5.0.1\build\bin" into the enviroment path
+6.add "-Djava.library.path=C:\Users\ZhangYucong\Documents\Research\JSCIPOpt\build\Release" into the VM options
